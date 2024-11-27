@@ -10,15 +10,13 @@ var moduloFuncoes = require ('./estados_cidades')
 
 const getListaDeEstados = function(){
     let status = false
-    let siglas = { }
+    let siglas = {}
     let siglasEcontradas = []
 
    moduloFuncoes.listaDeEstados.estados.forEach(function(item){
         status = true
         siglasEcontradas.push(item.sigla)
         //console.log(siglasEcontradas)
-        
-        
     })
     siglas.uf = siglasEcontradas
     siglas.quantidade = siglasEcontradas.length
